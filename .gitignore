@@ -6,4 +6,5 @@
 !.gitignore
 !.vimrc
 !/.vim/bundle/.vundle/*
+!/.vim/bundle/vundle/*
 !README.md
