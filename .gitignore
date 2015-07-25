@@ -1,0 +1,11 @@
+#exclude all except 
+*
+.*
+#exclude subdirectories
+*/
+
+#include theses
+!.gitignore
+!.vimrc
+!.vim/bundle/.vundle/script-names.vim-script.org.json
+!README.md
