@@ -1,6 +1,7 @@
 #exclude all except 
 *
 .*
+
 #exclude subdirectories
 */
 
