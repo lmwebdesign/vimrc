@@ -2,9 +2,6 @@
 *
 .*
 
-#exclude subdirectories
-*/
-
 #include theses
 !.gitignore
 !.vimrc
