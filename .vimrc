@@ -27,6 +27,21 @@ Plugin 'flazz/vim-colorschemes'
 " Match Tag "
 Plugin 'MatchTag'
 
+<<<<<<< HEAD
+" Stylus"
+Plugin 'wavded/vim-stylus'
+
+" Vim Statusbar"
+Plugin 'bling/vim-airline'
+
+" Jade Hightlight"
+Plugin 'digitaltoad/vim-jade'
+
+" Multiple Cursors"
+Plugin 'terryman/vim-multiple-cursors'
+
+=======
+>>>>>>> f8df77f59482e2e37fc9ca4148d3f3aa2f6dde92
 call vundle#end()
 " Now we can turn our filetype functionality back on
 filetype plugin indent on
@@ -99,6 +114,14 @@ noremap <S-w> :q <Enter>
 " tmp exit vim"
 map <S-Space> :sh <Enter>
 
+<<<<<<< HEAD
+" Default mapping
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-p>'
+let g:multi_cursor_skip_key='<C-x>'
+
+=======
+>>>>>>> f8df77f59482e2e37fc9ca4148d3f3aa2f6dde92
 " Reload .vimrc "
 augroup reload_vimrc " {
        autocmd!
