@@ -8,5 +8,5 @@
 #include theses
 !.gitignore
 !.vimrc
-!.vim/bundle/.vundle/script-names.vim-scripts.org.json
+!/.vim/bundle/.vundle/*
 !README.md
