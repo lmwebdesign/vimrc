@@ -1,0 +1,38 @@
+<!-- <blaze-template name="loginButtons"></blaze-template> -->
+
+<div class="login" ng-show="!$root.currentUser">
+    <form>
+        <h5>Menu Sign In</h5>
+        <input ng-model="usr.email" type="text" placeholder="email">
+        <input ng-model="usr.password" type="password" placeholder="password">
+        <button ng-click="login(usr);">sign in</button>
+        <p ng-show="errors.signin">incorrect email/password</p>
+    </form>
+</div>
+
+<div class="dashboard" ng-show="$root.currentUser">
+    <section class="logout">
+        <button ng-click="logout();">Log Out</button>
+    </section>
+
+    <section class="addnew">
+        <input type="text" ng-model="item.name" placeholder="enter item name">
+        <input type="number" ng-model="item.price" placeholder="enter item price">
+        <textarea ng-model="item.desc" placeholder="enter item description"></textarea>
+        <button ng-click="addNewItem(item);">Add Item</button>
+    </section>
+
+    <section class="current">
+        <div class="item"  ng-repeat="item in menu">
+            <div class="name">
+                <p><strong>{{ item.name }}</strong></p>
+            </div>
+            <div class="price">
+                <p>{{ item.price }}</p>
+            </div>
+            <div class="desc">
+                <p>{{ item.desc }}</p>
+            </div>
+        </div>
+    </section>
+</div>

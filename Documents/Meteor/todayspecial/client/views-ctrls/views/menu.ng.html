@@ -1,0 +1,19 @@
+<div class="menu">
+    <header>
+        <h2>Today's Special</h2>
+        <p>(prices may change without notice)</p>
+    </header>
+    <div class="item" ng-repeat="item in menu">
+        <p class="name">
+            <strong>
+            {{ item.name }} 
+            </strong>
+        </p>
+        <p class="price">
+            {{ item.price }}
+        </p>
+        <p class="desc">
+            {{ item.desc }}
+        </p>    
+    </div>
+</div>

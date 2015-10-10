@@ -1,0 +1,1 @@
+{"version":3,"sources":["meteor://💻app/server/publish.js"],"names":[],"mappings":";;;;;;;;AAAA,MAAM,CAAC,OAAO,CAAC,cAAc,EAAE,YAAU;AACrC,WAAO,IAAI,CAAC,IAAI,EAAE,CAAC;CACtB,CAAC,CAAC,sE","file":"/server/publish.js","sourcesContent":["Meteor.publish('todayspecial', function(){\n    return Menu.find();\n});\n"]}
