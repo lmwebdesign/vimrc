@@ -27,7 +27,6 @@ Plugin 'flazz/vim-colorschemes'
 " Match Tag "
 Plugin 'MatchTag'
 
-<<<<<<< HEAD
 " Stylus"
 Plugin 'wavded/vim-stylus'
 
@@ -37,11 +36,15 @@ Plugin 'bling/vim-airline'
 " Jade Hightlight"
 Plugin 'digitaltoad/vim-jade'
 
-" Multiple Cursors"
-Plugin 'terryman/vim-multiple-cursors'
 
-=======
->>>>>>> f8df77f59482e2e37fc9ca4148d3f3aa2f6dde92
+" Syntastic "
+Plugin 'scrooloose/syntastic'
+
+" Indent Guides "
+"Plugin 'nathanaelkane/vim-indent-guides"
+Plugin 'Yggdroot/indentLine'
+
+
 call vundle#end()
 " Now we can turn our filetype functionality back on
 filetype plugin indent on
@@ -60,8 +63,10 @@ set pastetoggle=<F2>
 let html_no_rendering=1
 
 " color scheme "
-colorscheme badwolf
+colorscheme bvemu
 
+let g:indentLine_char = '.'
+let g:indentLine_color_gui = '#A4E57E'
 " Show lines"
 set number
 
@@ -114,14 +119,13 @@ noremap <S-w> :q <Enter>
 " tmp exit vim"
 map <S-Space> :sh <Enter>
 
-<<<<<<< HEAD
 " Default mapping
 let g:multi_cursor_next_key='<C-n>'
 let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_skip_key='<C-x>'
 
-=======
->>>>>>> f8df77f59482e2e37fc9ca4148d3f3aa2f6dde92
+" enable syntastic js"
+
 " Reload .vimrc "
 augroup reload_vimrc " {
        autocmd!
